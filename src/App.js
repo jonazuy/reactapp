@@ -1,17 +1,15 @@
-import logo from './logo1.png';
+import { Navbar } from 'react-bootstrap';
 import './App.css';
+import Header from './components/Header';
+import ItemCard from './components/ItemCard';
+import ItemListContainer from './components/ItemListContainer';
 
 function App() {
   return (
-    <div className="nav">
-       <div className='logo'>ECOMERCE</div>
-       <div className='links'>
-      <ul>
-       <a href="url">Inicio</a>        
-       <a href="url">Nosotros</a>
-       <a href="url">Articulos</a>
-      </ul>
-       </div>
+    <div className="App">
+       <Header/>
+       <ItemListContainer/>
+       
     </div>
   );
 }
