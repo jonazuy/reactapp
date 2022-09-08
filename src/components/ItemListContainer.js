@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ItemCard from './ItemCard'
+import ItemList from './ItemList'
 
 
 
@@ -273,20 +274,10 @@ getData()
 
    return (
 
-            
+         <div>
+            <ItemList productos={productos}/>
+         </div> 
 
-      <div className='row'>
-         {
-            data.map(productos => (
-               <div className='col-2'>
-                  <ItemCard key={productos.id} nombre={productos.nombre} descripcion={productos.descripcion} imagen={productos.imagen} precio={productos.precio} stock={productos.stock} />
-               </div>
-
-
-            ))
-         }
-
-      </div>
    )
 }
 
